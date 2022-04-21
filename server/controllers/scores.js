@@ -11,8 +11,8 @@ async function all(req, res) {
 
 async function byId(req, res) {
   try {
-    const score = {score: 0}
-    //const score = await Score.findById(req.params.id);
+    //const score = {score: 0}
+    const score = await Score.findById(req.params.id);
     res.status(200).json(score);
   } catch (err) {
     res.status(500).send(err);
