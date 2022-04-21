@@ -3,6 +3,7 @@ const Score = require("../models/Score");
 async function all(req, res) {
   try {
     const scores = await Score.all();
+    console.log("interesting if you see this", scores)
     res.status(200).json(scores);
   } catch (err) {
     res.status(500).json({ err });
