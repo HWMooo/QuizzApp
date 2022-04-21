@@ -16,7 +16,7 @@ class Score {
         let scores = scoresData.map((score) => new Score(score));
         res(scores);
       } catch (error) {
-        rej("Error retrieving scores: " + error);
+        rej("Error retrieving scores wooop: " + error);
       }
     });
   }
