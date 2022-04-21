@@ -5,7 +5,7 @@ services:
       dockerfile: /server/Dockerfile
     container_name: dev_api
     ports:
-      - 10371:10371
+      - 3000:3000
     environment:
       - DB_NAME=scores
       - DB_CONNECTION=mongodb://gjam:quizpass@db:27017
