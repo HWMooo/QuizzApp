@@ -2,12 +2,12 @@ version: "3"
 services:
   api:
     build:
-      dockerfile: Dockerfile
+      dockerfile: /server/Dockerfile
     container_name: dev_api
     ports:
       - 3000:3000
     environment:
-      - DB_NAME=quiz
+      - DB_NAME=scores
       - DB_CONNECTION=process.env.MONGODB_URI;
     depends_on:
       - db
