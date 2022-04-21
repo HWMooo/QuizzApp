@@ -17,7 +17,6 @@ class Score {
         res(scores);
       } catch (error) {
         rej("Error retrieving scores wooop: " + error);
-        console.log(error)
 
       }
     });
