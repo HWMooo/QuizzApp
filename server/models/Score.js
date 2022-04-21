@@ -13,7 +13,6 @@ class Score {
       try {
         const db = await init();
         const scoresData = await db.collection("scores").find().toArray();
-        node.warn(scoresData)
         let scores = scoresData.map((score) => new Score(score));
         res(scores);
       } catch (error) {
