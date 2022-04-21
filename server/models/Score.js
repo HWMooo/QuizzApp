@@ -11,6 +11,7 @@ class Score {
   static all() {
     return new Promise(async (res, rej) => {
       try {
+        console.log("gets here")
         const db = await init();
         const scoresData = await db.collection("scores").find().toArray();
         let scores = scoresData.map((score) => new Score(score));

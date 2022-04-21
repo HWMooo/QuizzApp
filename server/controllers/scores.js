@@ -6,7 +6,7 @@ async function all(req, res) {
     console.log("interesting if you see this", scores)
     res.status(200).json(scores);
   } catch (err) {
-    res.status(420).json({ err });
+    res.status(500).json({ err });
   }
 }
 
