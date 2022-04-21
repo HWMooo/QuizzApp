@@ -25,7 +25,7 @@ function Setup() {
   const dispatch = useDispatch();
 
   async function fetchUser(id) {
-    const response = await fetch(`http://localhost:3000/scores/${id}`);
+    const response = await fetch(`https://fpquizapp.herokuapp.com/scores/${id}`);
     let { username } = await response.json();
     setMainPlayer(username);
     let playerArray = [];

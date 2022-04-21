@@ -10,11 +10,11 @@ class Score {
 
   static all() {
     return new Promise (async (res, rej) => {
-      console.log("gets here")
+      //console.log("gets here")
       try {
         const db = await init()
         const scoresData = await db.collection("scores").find().toArray();
-        console.log('in get all function in models', scoresData)
+        //console.log('in get all function in models', scoresData)
         let scores = scoresData.map((score) => new Score(score));
         res(scores);
       } catch (error) {
