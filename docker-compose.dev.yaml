@@ -18,9 +18,9 @@ services:
       - "dbdata:/var/lib/mongodb/data"
       - "./db/seeds.js:/docker-entrypoint-initdb.d/seeds.js:ro"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=gjam
-      - MONGO_INITDB_DATABASE=quiz
-      - MONGO_INITDB_ROOT_PASSWORD=quizpass
+      - MONGO_INITDB_ROOT_USERNAME=HWMooo
+      - MONGO_INITDB_DATABASE=scores
+      - MONGO_INITDB_ROOT_PASSWORD=6dVDkX7H3KdzSEOD
 volumes:
   dbdata:
 networks:
