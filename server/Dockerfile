@@ -1,6 +1,6 @@
 FROM node:12.18.4
 
-EXPOSE 3000
+EXPOSE 10371
 
 RUN mkdir /code
 WORKDIR /code
