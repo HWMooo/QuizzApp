@@ -13,7 +13,7 @@ class Score {
       console.log("gets here")
       try {
         const db = await init()
-        const scoresData = await db.collection("quiz.scores").find().toArray();
+        const scoresData = await db.collection("scores").find().toArray();
         console.log('in get all function in models', scoresData)
         let scores = scoresData.map((score) => new Score(score));
         res(scores);
