@@ -51,6 +51,7 @@ class Score {
             { $inc: { score: incrementor } }
           );
         let score = new Score(scoreData);
+        console.log(score)
         res(score);
       } catch (error) {
         rej("Error updating score: " + error);
