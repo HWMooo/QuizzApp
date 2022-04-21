@@ -13,7 +13,7 @@ class Score {
       console.log("gets here")
       try {
         const db = await init()
-        const scoresData = await db.collection("scores").find().toArray();
+        const scoresData = await db.collection("quiz.scores").find().toArray();
         let scores = scoresData.map((score) => new Score(score));
         res(scores);
       } catch (error) {
