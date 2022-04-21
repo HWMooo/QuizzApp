@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const connectionUrl = DB_CONNECTION;
+const connectionUrl = process.env.DB_CONNECTION;
 
 const dbName = process.env.DB_NAME;
 
