@@ -26,10 +26,17 @@ function Results() {
         score: scoreIncrementor,
       }),
     });
+    await fetchTotalScore(id)
+  }
+  
+    async function fetchTotalScore(id) {
+    const response = await fetch(`https://fpquizapp.herokuapp.com/scores/${id}`);
     let resp = await response.json();
     setNewScore(resp.score);
-  }
+    }
 
+  
+  
   function renderScores() {
     const displayArray = [];
     const maxScore = quiz.length * 5;
