@@ -226,6 +226,7 @@ function Quiz() {
 
 
     return (<>
+    <h1 className="header">Quiz</h1>
         <h2>{error ? error.message : loading ? null : playerToAnswer.playerName} score:{loading ? null : playerToAnswer.score}</h2>
         <form onSubmit={onSubmitAnswer}>
             <h2>question:{error ? error.message : loading ? 'loading' : renderQuestion()}</h2>
