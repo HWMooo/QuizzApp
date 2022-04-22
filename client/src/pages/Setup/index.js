@@ -154,6 +154,7 @@ function Setup() {
 
   return (
     <>
+    <h1 className="header">Setup</h1>
       <form onSubmit={handleSubmit}>
         <label>Local or online?</label>
 
