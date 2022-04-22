@@ -18,7 +18,7 @@ function Results() {
   }, []);
 
   async function fetchScore(id, scoreIncrementor) {
-    const response = await fetch(`http://localhost:3000/scores`, {
+    const response = await fetch(`https://fpquizapp.herokuapp.com/scores`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
