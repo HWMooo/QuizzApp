@@ -33,7 +33,7 @@ function Results() {
   function renderScores() {
     const displayArray = [];
     const maxScore = quiz.length * 5;
-    players.sort((a, b) => (a.score > b.score ? -1 : 1));
+    players.sort((c, b) => (c.score > b.score ? -1 : 1));
     const winner = players[0];
     displayArray.push(
       <h1>
