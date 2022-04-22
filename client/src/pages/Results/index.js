@@ -71,7 +71,7 @@ function Results() {
     <>
       <h1>Results page</h1>
       <h1>
-        {mainPlayer.playerName} Overall Score is now: {newScore} points!
+        {mainPlayer.playerName} Overall Score is now: {newScore && {newScore} points}!
       </h1>
       {renderScores()}
       <h1>PLAY AGAIN?</h1>
