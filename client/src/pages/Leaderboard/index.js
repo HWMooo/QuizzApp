@@ -7,7 +7,7 @@ import './styles.css'
 
 function Leaderboard() {
 
-    const conStr = 'http://localhost:3000/scores';
+    const conStr = 'https://fpquizapp.herokuapp.com/scores';
 
     const [scoresList,setScoresList] = useState([]);
     const [loading, setLoading] = useState(false);
