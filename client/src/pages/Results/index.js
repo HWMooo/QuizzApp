@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { emptyQuiz } from "../../actions";
+import './styles.css'
 
 function Results() {
   const dispatch = useDispatch();
